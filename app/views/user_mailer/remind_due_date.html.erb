@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Due Date Reminder</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .ticket-details {
+      margin-top: 20px;
+    }
+
+    .ticket-details strong {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Due Date Reminder</h1>
+    <p>Hello <%= @user.name %>!</p>
+    
+    <p>This is a reminder that the following ticket is due soon:</p>
+    
+    <div class="ticket-details">
+      <p><strong>Title:</strong> <%= @ticket.title %></p>
+      <p><strong>Description:</strong> <%= @ticket.description %></p>
+      <p><strong>Due Date:</strong> <%= @ticket.due_date %></p>
+    </div>
+    
+    <p>Thank you!</p>
+  </div>
+</body>
+</html>

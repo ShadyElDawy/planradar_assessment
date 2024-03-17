@@ -1,0 +1,32 @@
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @user.mail %>
+</p>
+
+<p>
+  <strong>Send Due Date Reminder:</strong>
+  <%= @user.send_due_date_reminder ? 'Yes' : 'No' %>
+</p>
+
+<p>
+  <strong>Due Date Reminder Interval:</strong>
+  <%= @user.due_date_reminder_interval %>
+</p>
+
+<p>
+  <strong>Due Date Reminder Time:</strong>
+  <%= @user.due_date_reminder_time %>
+</p>
+
+<p>
+  <strong>Time Zone:</strong>
+  <%= @user.time_zone %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
